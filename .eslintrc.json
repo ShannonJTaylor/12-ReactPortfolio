@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "no-console": "warn",  // Warns on console statements
+    "semi": ["error", "always"],  // Enforce semicolons
+    "quotes": ["error", "single"],  // Use single quotes for strings
+    "react/prop-types": "off",  // Turn off prop-types as we can use TypeScript for type checking
+    "react/react-in-jsx-scope": "off",  // Not needed with React 17 and newer
+    "indent": ["error", 2],  // Enforce 2-space indentation
+    "comma-dangle": ["error", "never"],  // Disallow trailing commas
+    "react/jsx-uses-react": "off",  // Not needed with React 17 and newer
+    "react/jsx-uses-vars": "error",  // Prevent React variables from being marked as unused
+    "react/jsx-indent": ["error", 2]  // Enforce consistent indentation in JSX
+  }
+}
+
+    
+  
