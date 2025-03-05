@@ -1,5 +1,5 @@
-// src/App.jsx
-import React, { useState } from 'react';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import About from './pages/About';
@@ -8,55 +8,28 @@ import Contact from './pages/Contact';
 import Error from './pages/Error';
 import Home from './pages/Home';
 import './App.css';
+import NavTabs from './components/NavTabs';
 
 const App = () => {
-  const [currentPage, setCurrentPage] = useState('Home');
-
-  const renderPage = () => {
-    switch (currentPage) {
-      case 'About':
-        return <About />;
-      case 'Blog':
-        return <Blog />;
-      case 'Contact':
-        return <Contact />;
-      case 'Home':
-        return <Home />;
-      default:
-        return <Error />;
-    }
-  };
-
+ 
   return (
-    <div>
-      <Header setCurrentPage={setCurrentPage} />
+    <Router>
+    <div className="app-container">
+      <Header />
+      <NavTabs />            
       <main>
-        {renderPage()}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Error />} />
+          </Routes>        
       </main>
       <Footer />
     </div>
+    </Router>
   );
 };
 
 export default App;
-
-
-
-
-// // Bringing in the required import from 'react-router-dom'
-// import { Outlet } from 'react-router-dom';
-// import Nav from './components/NavTabs';
-
-// function App() {
-//   // The Outlet component will conditionally swap between the different pages according to the URL
-//   return (
-//     <>
-//       <Nav />
-//       <main className="mx-3">
-//        <Outlet /> 
-//       </main>
-//     </>
-//   );
-// }
-
-// export default App;

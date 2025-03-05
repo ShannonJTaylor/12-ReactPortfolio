@@ -18,3 +18,4 @@ export default function Home() {
     );
   }
   
+  //To add images into these files, save them in asses, import  like this, import application_1Background from './assets/application_1Background.png'; then reference them like this <img src={application_1Background} alt="Background for application 1" />
