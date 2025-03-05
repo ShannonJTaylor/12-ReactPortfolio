@@ -1,34 +1,81 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import About from './pages/About';
-import Blog from './pages/Blog';
+import AboutMe from './pages/AboutMe';
+import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
-import Error from './pages/Error';
+import ErrorPage from './pages/Error';
 import Home from './pages/Home';
+import Resume from './pages/Resume';
 import './App.css';
 import NavTabs from './components/NavTabs';
 
-const App = () => {
- 
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: (
+      <>
+        <Header />
+        <NavTabs />
+        <Home />
+        <Footer />
+      </>
+    ),
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: '/aboutme',
+    element: (
+      <>
+        <Header />
+        <NavTabs />
+        <AboutMe />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: '/portfolio',
+    element: (
+      <>
+        <Header />
+        <NavTabs />
+        <Portfolio />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: '/contact',
+    element: (
+      <>
+        <Header />
+        <NavTabs />
+        <Contact />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: '/resume',
+    element: (
+      <>
+        <Header />
+        <NavTabs />
+        <Resume />
+        <Footer />
+      </>
+    ),
+  },
+]);
+
+
+function App() { 
   return (
     
-    <div className="app-container">
-      <Header />
-      <NavTabs />            
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<Error />} />
-        </Routes>        
-      </main>
-      <Footer />
-    </div>
-    
+    <RouterProvider router={router}/>
   );
 };
 
