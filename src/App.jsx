@@ -13,7 +13,7 @@ import NavTabs from './components/NavTabs';
 const App = () => {
  
   return (
-    <Router>
+    
     <div className="app-container">
       <Header />
       <NavTabs />            
@@ -24,11 +24,11 @@ const App = () => {
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Error />} />
-          </Routes>        
+        </Routes>        
       </main>
       <Footer />
     </div>
-    </Router>
+    
   );
 };
 
