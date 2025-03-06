@@ -13,12 +13,7 @@ function NavTabs() {
     <ul className="nav nav-tabs">
       <li className="nav-item">
         <Link to="/" className={getLinkClass('/')}>
-          Home    
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link to="/aboutme" className={getLinkClass('/aboutme')}>
-          About Me
+          About Me    
         </Link>
       </li>
       <li className="nav-item">

@@ -19,22 +19,11 @@ const router = createBrowserRouter([
       <>
         <Header />
         <NavTabs />
-        <Home />
-        <Footer />
-      </>
-    ),
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: '/aboutme',
-    element: (
-      <>
-        <Header />
-        <NavTabs />
         <AboutMe />
         <Footer />
       </>
     ),
+    errorElement: <ErrorPage />,
   },
   {
     path: '/portfolio',

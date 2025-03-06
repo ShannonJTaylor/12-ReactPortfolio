@@ -1,3 +1,16 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  font-size: 16px;
+  padding: 0;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+ }
+
+
 :root {
   --primary-color:  #98bf99;  
   --secondary-color: #e9e08c;
@@ -7,11 +20,27 @@
 }
 
 #root {
-    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0;
     text-align: center;
   }
+   main {
+    flex-grow: 1;
+    width: 100%;
+    padding: 0;    
+   }
+
+   
+   footer {
+    background-color: var(--secondary-color);
+    padding: 1.5rem;
+    text-align: center;   
+    margin-top: auto;     
+   }
   
   .logo {
     height: 6em;
@@ -43,17 +72,17 @@
     background-color: var(--primary-color);
     font-weight: bold;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     padding: 10px;
     list-style: none;
   }
 
   .nav-link {
     color: var(--text-color);
-    background-color: var(--accent-color);  /* #fae1e1 Probably need to adjust this.*/
+    background-color: var(--accent-color);  
     border-radius: 5px;
-    padding: 10px 15 px;
-    border-radius: 5px;
+    padding: 8px 12px;
+    margin-right: 10px;
     transition: background-color 0.3 ease-in-out;    
   }
 
@@ -63,9 +92,48 @@
 
   .nav-link.active {
     background-color: var(--secondary-color);
-    color: white;
+    color: var (--accent-color);
     font-weight: bold;
     border-radius: 5px;
+  }
+
+  .projects-container {
+    display: flex;
+    flex-wrap:wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+  }
+
+  .project-card {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 1rem;
+    box-shadow: 2px 4px 10px 0 #98bf99(0, 0, 0, 0.2);
+    text-align: left;
+    width: 400px;
+    height: auto;
+    
+  }
+
+  .project-image {
+    width: 100%;
+    border-radius: 10px;
+    height:auto;
+    object-fit: cover;
+  }
+
+  .project-link, .github-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .project-link:hover, .github-link:hover {
+    color: var(--accent-color);
   }
   
   @keyframes logo-spin {
@@ -90,4 +158,52 @@
   .read-the-docs {
     color: #888;
   }
+  /* Larger screens (tablets and above) */
+@media (min-width: 600px) {
+  body {
+    font-size: 18px; /* slightly larger font for readability */
+  }
+
+  footer {
+    padding: 2rem;
+  }
+  
+}
+
+/* Desktop and larger screens */
+@media (min-width: 1024px) {
+  #root {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-tabs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+}
+
+/*Mobile-first adjustments*/
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .nav-tabs {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+}
   
