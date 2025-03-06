@@ -1,21 +1,19 @@
-export default function Contact() {
+import React from "react";
+import ContactForm from "../components/ContactForm";
+
+
+
+function Contact() {
     return (
-      <div>
-        <h1>Contact Page</h1>
+      <div className="contact-page">
+        <h1>Contact Me</h1>
         <p>
-          Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-          molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-          magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-          efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-          mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-          posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-          faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-          ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-          dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-          conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-          rhoncus. Etiam vel condimentum magna, quis tempor nulla.
+          Questions, comments, concerns? Fill out the form below to get in touch with me!
         </p>
+        <ContactForm />
       </div>
     );
   }
+
+  export default Contact;
   

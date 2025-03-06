@@ -6,7 +6,6 @@ import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import ErrorPage from './pages/Error';
-import Home from './pages/Home';
 import Resume from './pages/Resume';
 import './App.css';
 import NavTabs from './components/NavTabs';
