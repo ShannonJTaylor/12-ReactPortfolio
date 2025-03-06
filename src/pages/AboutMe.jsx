@@ -1,6 +1,15 @@
-export default function About() {
+import React from "react";
+import { avatar } from "../assets/images/imageImports";
+
+const AboutMe = () => {
     return (
-      <div>
+      <div className="about-me-container">
+        <img
+        className="avatar-image"
+        src={avatar}
+        alt="Avatar"
+        />
+
         <h1>About Me</h1>
         <p>
         I am an analytical scientist transitioning into a roll involving automation. My new roll requires me to program the automation that will allow my colleagues to work more efficiently. I am new to the world of coding
@@ -8,5 +17,7 @@ export default function About() {
         </p>
       </div>
     );
-  }
+  };
+
+  export default AboutMe;
   

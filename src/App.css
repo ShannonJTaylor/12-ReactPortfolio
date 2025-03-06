@@ -55,7 +55,21 @@ header {
     footer a:hover {
       color: var(--primary-color);
     }
-  
+
+    .about-me-container {
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .avatar-image {
+      width: 250px;  /* Adjust size as needed */
+      height: 250px; /* Adjust size as needed */
+      border-radius: 0%;
+      object-fit: cover;
+      margin-top: 20px;
+    }
+
+      
   .logo {
     height: 6em;
     padding: 1.5em;
