@@ -66,7 +66,7 @@ vite: A fast build tool and development server.
 
 # Screenshot
 
-![APP Screenshot](assets/images/appScreenshot.png)
+![APP Screenshot](/src/assets/images/appScreenshot.png)
 
 ## Deployed Application
 This portfolio is hosted on **Netlify**, a popular platform for deploying static sites and web applications. You can view the live version of this portfolio at:
