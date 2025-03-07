@@ -208,7 +208,25 @@ header {
     text-align: center;
   }
 
+  .resume-section ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+  }
 
+  .resume-section li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .resume-section button {
+    margin-bottom: 20px;
+  }
+
+  .resume-section h3 {
+    margin-top: 20px;
+  }
   
   @keyframes logo-spin {
     from {

@@ -1,24 +1,25 @@
  import React from "react";
  import Project from "../components/Project";
+ import { project1, project2, project3 } from "../assets/images/imageImports";
 
  const Portfolio =() => {
   const projects = [
     
       {
-        title:"Project 1",
-        image:"https://via.placeholder.com/150", //Import images from the src/assets/images/imageImports.js file
+        title:"Calculator",
+        image: project1, //Import images from the src/assets/images/imageImports.js file
         projectLink:"https://www.example.com",
         githubLink:"https://www.github.com",
       },
       {
-        title:"Project 2",
-        image:"https://via.placeholder.com/150",
+        title:"Surf Report",
+        image: project2,
         projectLink:"https://www.example.com",
         githubLink:"https://www.github.com",
       },
       {
-        title:"Project 3",
-        image:"https://via.placeholder.com/150",
+        title:"Pastel Puzzle",
+        image:project3,
         projectLink:"https://www.example.com",
         githubLink:"https://www.github.com",
       },

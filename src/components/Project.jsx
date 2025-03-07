@@ -1,5 +1,6 @@
 
 import React from 'react';
+ 
 
 const Project = ({ title, image, deployedUrl, repoUrl }) => {
   return (
