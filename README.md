@@ -37,6 +37,8 @@ To run the project locally, follow these steps:
     ```
 5. Open the browser at http://localhost:5173 to view the app.
 
+6. Use Netlify to deploy the site live. 
+
 ## Usage
 Once the app is running locally, you can interact with various sections:
 
@@ -64,10 +66,10 @@ vite: A fast build tool and development server.
 
 # Screenshot
 
-![Alt text]()
+![APP Screenshot](assets/images/appScreenshot.png)
 
 ## Deployed Application
-his portfolio is hosted on **Netlify**, a popular platform for deploying static sites and web applications. You can view the live version of this portfolio at:
+This portfolio is hosted on **Netlify**, a popular platform for deploying static sites and web applications. You can view the live version of this portfolio at:
 [Deployed App Link](`https://remarkable-maamoul-6b9bbd.netlify.app/`)
 
 License
