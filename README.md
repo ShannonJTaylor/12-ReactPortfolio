@@ -68,7 +68,7 @@ vite: A fast build tool and development server.
 
 ## Deployed Application
 his portfolio is hosted on **Netlify**, a popular platform for deploying static sites and web applications. You can view the live version of this portfolio at:
-[Deployed App Link](`https://your-app-name.netlify.app`)
+[Deployed App Link](`https://remarkable-maamoul-6b9bbd.netlify.app/`)
 
 License
 This project is licensed under the MIT License.
